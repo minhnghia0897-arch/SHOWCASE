@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khám phá - SHOWCASE.VN</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="explore.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">SHOWCASE.VN</a>
+      <div class="navbar-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="explore.html" class="active">Khám phá</a>
+        <a href="#">Dự án của tôi</a>
+      </div>
+      <div class="navbar-right">
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" placeholder="Tìm kiếm cảm hứng..." id="searchInput">
+        </div>
+        <a href="#" class="btn btn-primary">Đăng tải</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- EXPLORE HEADER -->
+  <section class="explore-header">
+    <div class="container">
+      <h1>Khám phá những <em>kiệt tác</em> web mới nhất.</h1>
+      <p>Nơi quy tụ những thiết kế đột phá từ cộng đồng sáng tạo Việt Nam. Từ Landing Page tinh tế đến hệ thống E-commerce phức tạp.</p>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="explore-filters">
+    <div class="container">
+      <div class="filters-row">
+        <div class="filter-tags">
+          <button class="filter-tag active" data-filter="all">Tất cả</button>
+          <button class="filter-tag" data-filter="landing">Landing Page</button>
+          <button class="filter-tag" data-filter="portfolio">Portfolio</button>
+          <button class="filter-tag" data-filter="ecommerce">E-commerce</button>
+          <button class="filter-tag" data-filter="saas">SaaS</button>
+        </div>
+        <div class="sort-control">
+          <span>Sắp xếp:</span>
+          <select id="sortSelect">
+            <option value="newest">Mới nhất</option>
+            <option value="popular">Phổ biến</option>
+            <option value="price-low">Giá thấp</option>
+            <option value="price-high">Giá cao</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT GRID -->
+  <section class="explore-grid-section">
+    <div class="container">
+      <div class="explore-grid" id="projectGrid">
+        <a href="product.html" class="project-card" data-category="saas">
+          <div class="project-img" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+            <div class="project-img-inner">
+              <div style="color:#fff;text-align:center;padding:40px;">
+                <div style="font-size:2rem;margin-bottom:8px;">{ ... }</div>
+                <div style="font-size:0.9rem;font-weight:600;">MOMNBT YERT</div>
+                <p style="font-size:0.7rem;opacity:0.7;margin-top:8px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Nexus Intelligence System</h3>
+          </div>
+        </a>
+
+        <a href="product.html" class="project-card" data-category="portfolio">
+          <div class="project-img" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);">
+            <div class="project-img-inner">
+              <div style="text-align:center;padding:30px;">
+                <p style="font-size:1rem;font-style:italic;font-weight:600;">Minimalist<br>PersonalPortfolio<br>bonocanro</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Studio Hào Quang</h3>
+          </div>
+        </a>
+
+        <a href="product.html" class="project-card" data-category="ecommerce">
+          <div class="project-img" style="background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);">
+            <div class="project-img-inner">
+              <div style="text-align:center;padding:40px;">
+                <div style="font-size:3rem;">👠</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>L'Aurore Collection</h3>
+          </div>
+        </a>
+
+        <a href="product.html" class="project-card" data-category="saas">
+          <div class="project-img" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
+            <div class="project-img-inner">
+              <div style="text-align:center;padding:30px;">
+                <div style="width:80%;margin:auto;background:#fff;border-radius:8px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                  <div style="height:8px;background:#e0e0e0;border-radius:4px;margin-bottom:8px;width:60%;"></div>
+                  <div style="height:8px;background:#e0e0e0;border-radius:4px;width:40%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>CloudSync Dashboard</h3>
+          </div>
+        </a>
+
+        <a href="product.html" class="project-card" data-category="portfolio">
+          <div class="project-img" style="background: linear-gradient(135deg, #a8e6cf 0%, #88d8a8 100%);">
+            <div class="project-img-inner">
+              <div style="text-align:center;padding:30px;">
+                <div style="font-weight:700;font-size:1.2rem;text-transform:uppercase;">Architectural<br>Agency</div>
+                <div style="font-size:0.7rem;margin-top:8px;opacity:0.7;">Building Dreams</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Atelier Space</h3>
+          </div>
+        </a>
+
+        <a href="product.html" class="project-card" data-category="saas">
+          <div class="project-img" style="background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);">
+            <div class="project-img-inner">
+              <div style="text-align:center;padding:20px;">
+                <div style="background:#fff;border-radius:8px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                  <div style="display:flex;gap:8px;margin-bottom:12px;">
+                    <div style="height:6px;background:var(--primary);border-radius:3px;flex:1;"></div>
+                    <div style="height:6px;background:#e0e0e0;border-radius:3px;flex:2;"></div>
+                  </div>
+                  <div style="height:6px;background:#e0e0e0;border-radius:3px;width:70%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>EcoLife Platform</h3>
+          </div>
+        </a>
+
+        <a href="product.html" class="project-card" data-category="landing">
+          <div class="project-img" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);">
+            <div class="project-img-inner">
+              <div style="text-align:center;padding:30px;">
+                <div style="width:60px;height:100px;background:#fff;border-radius:12px;margin:auto;box-shadow:0 4px 12px rgba(0,0,0,0.1);position:relative;">
+                  <div style="position:absolute;top:10px;left:10px;right:10px;bottom:20px;background:#e8f5e9;border-radius:6px;"></div>
+                  <div style="position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:var(--success);color:white;font-size:0.5rem;padding:2px 6px;border-radius:4px;">sale</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Vault Mobile App</h3>
+          </div>
+        </a>
+
+        <a href="product.html" class="project-card" data-category="landing">
+          <div class="project-img" style="background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);">
+            <div class="project-img-inner">
+              <div style="color:#fff;text-align:center;padding:40px;">
+                <div style="font-size:2rem;margin-bottom:8px;">{ ... }</div>
+                <div style="font-size:0.9rem;font-weight:600;">MOMNBT YERT</div>
+                <p style="font-size:0.7rem;opacity:0.7;margin-top:8px;">Creative agency landing page</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Lumina Agency Website</h3>
+          </div>
+        </a>
+
+        <a href="product.html" class="project-card" data-category="ecommerce">
+          <div class="project-img" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);">
+            <div class="project-img-inner">
+              <div style="text-align:center;padding:30px;">
+                <p style="font-size:1rem;font-style:italic;font-weight:600;">Minimalist<br>PersonalPortfolio<br>bonocanro</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Vietnamese Crafts Shop</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="load-more">
+        <button class="btn btn-outline" id="loadMoreBtn">
+          Tải thêm dự án
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+      <div>
+        <div class="footer-brand">SHOWCASE.VN</div>
+        <p class="footer-desc">&copy; 2024 Showcase.vn. Tất cả quyền được bảo lưu.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Về chúng tôi</a>
+        <a href="#">Điều khoản</a>
+        <a href="#">Liên hệ</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
