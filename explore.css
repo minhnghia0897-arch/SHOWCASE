@@ -124,9 +124,59 @@
   padding: 14px 4px;
 }
 
+.project-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
 .project-info h3 {
   font-size: 1rem;
   font-weight: 500;
+}
+
+.project-price {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.project-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.project-author-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  color: white;
+}
+
+.project-stats-inline {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.project-stats-inline span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
 }
 
 /* ==================== LOAD MORE ==================== */
