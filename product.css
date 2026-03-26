@@ -122,10 +122,10 @@
   font-size: 0.82rem;
 }
 
-/* BOTTOM: Full-width images */
+/* BOTTOM: Images */
 .product-images-full {
-  padding: 0 24px;
-  max-width: 100%;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 .product-images-full .product-main-img {
