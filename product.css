@@ -131,6 +131,40 @@
 .product-images-full .product-main-img {
   border-radius: var(--radius-lg);
   overflow: hidden;
+  position: relative;
+}
+
+.img-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-md);
+  color: var(--text-dark);
+}
+
+.img-nav:hover {
+  background: white;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.img-nav-prev {
+  left: 16px;
+}
+
+.img-nav-next {
+  right: 16px;
 }
 
 .product-img-placeholder {

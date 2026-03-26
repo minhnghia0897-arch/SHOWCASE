@@ -187,21 +187,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // ==================== PRODUCT PAGE: THUMBNAILS ====================
+  // ==================== PRODUCT PAGE: THUMBNAILS & NAV ====================
   var thumbs = document.querySelectorAll('.thumb');
   var mainImg = document.getElementById('mainProductImg');
+  var currentIdx = 0;
+
+  function goToSlide(idx) {
+    if (thumbs.length === 0 || !mainImg) return;
+    currentIdx = (idx + thumbs.length) % thumbs.length;
+    thumbs.forEach(function(t) { t.classList.remove('active'); });
+    thumbs[currentIdx].classList.add('active');
+    var imgUrl = thumbs[currentIdx].dataset.img;
+    if (imgUrl) mainImg.src = imgUrl;
+  }
 
   if (thumbs.length > 0 && mainImg) {
-    thumbs.forEach(function(thumb) {
+    thumbs.forEach(function(thumb, i) {
       thumb.addEventListener('click', function() {
-        thumbs.forEach(function(t) { t.classList.remove('active'); });
-        this.classList.add('active');
-        var imgUrl = this.dataset.img;
-        if (imgUrl) {
-          mainImg.src = imgUrl;
-        }
+        goToSlide(i);
       });
     });
+
+    var prevBtn = document.getElementById('imgPrev');
+    var nextBtn = document.getElementById('imgNext');
+
+    if (prevBtn) prevBtn.addEventListener('click', function() { goToSlide(currentIdx - 1); });
+    if (nextBtn) nextBtn.addEventListener('click', function() { goToSlide(currentIdx + 1); });
   }
 
   // ==================== HOMEPAGE: FILTER BUTTONS ====================
