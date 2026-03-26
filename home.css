@@ -21,7 +21,7 @@
 
 .intro-heading {
   font-size: 4rem;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1.05;
   color: var(--text-dark);
@@ -29,7 +29,7 @@
 
 .intro-sub {
   font-size: 1.15rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-secondary);
   max-width: 480px;
   margin: 24px auto 0;
@@ -68,7 +68,7 @@
 
 .section-heading {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -0.03em;
 }
 
@@ -151,7 +151,7 @@
 .number-value {
   display: block;
   font-size: 3.2rem;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: -0.04em;
   color: var(--text-dark);
 }
@@ -159,7 +159,7 @@
 .number-label {
   display: block;
   font-size: 0.85rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-secondary);
   margin-top: 8px;
 }
@@ -187,7 +187,7 @@
 
 .testimonial-card p {
   font-size: 1.05rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-dark);
   line-height: 1.7;
   margin-bottom: 24px;
@@ -231,14 +231,14 @@
 
 .cta-heading {
   font-size: 3.5rem;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1.05;
 }
 
 .cta-sub {
   font-size: 1.1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-secondary);
   margin: 20px 0 40px;
 }
