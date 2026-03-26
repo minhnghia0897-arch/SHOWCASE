@@ -185,10 +185,6 @@
   border-top: 1px solid var(--border);
 }
 
-.feedback-item:nth-child(odd) {
-  border-right: 1px solid var(--border);
-}
-
 .feedback-content {
   flex: 1;
 }
@@ -287,7 +283,6 @@
   .numbers-grid { grid-template-columns: 1fr; gap: 40px; }
   .number-value { font-size: 2.4rem; }
   .feedback-grid { grid-template-columns: 1fr; }
-  .feedback-item:nth-child(odd) { border-right: none; }
   .cta-heading { font-size: 2.2rem; }
   .section-header { flex-direction: column; gap: 16px; }
   .footer-simple { flex-direction: column; gap: 16px; text-align: center; }
