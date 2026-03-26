@@ -163,11 +163,11 @@
 
 /* ==================== FEEDBACK ==================== */
 .feedback {
-  padding: 100px 0;
+  padding: 48px 0;
 }
 
 .feedback .section-heading {
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 
 .feedback-grid {
@@ -181,7 +181,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 32px;
-  padding: 36px 32px;
+  padding: 24px 24px;
   border-top: 1px solid var(--border);
 }
 
@@ -236,11 +236,11 @@
 
 /* ==================== BLOG ==================== */
 .blog {
-  padding: 100px 0;
+  padding: 48px 0;
 }
 
 .blog .section-header {
-  margin-bottom: 48px;
+  margin-bottom: 28px;
 }
 
 .blog-grid {
@@ -301,7 +301,7 @@
 
 /* ==================== SEO ==================== */
 .seo {
-  padding: 100px 0;
+  padding: 48px 0;
   border-top: 1px solid var(--border);
 }
 
@@ -377,7 +377,7 @@
 
 /* ==================== CTA ==================== */
 .cta {
-  padding: 120px 0;
+  padding: 60px 0;
   text-align: center;
   background: var(--bg-light);
   border-radius: 0;
