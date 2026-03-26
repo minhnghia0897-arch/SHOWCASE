@@ -52,9 +52,8 @@
 .product-img-placeholder {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  object-fit: cover;
 }
 
 .product-thumbnails {
@@ -70,6 +69,13 @@
   cursor: pointer;
   transition: all 0.2s;
   border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .thumb.active {
