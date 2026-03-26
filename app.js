@@ -189,14 +189,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ==================== PRODUCT PAGE: THUMBNAILS ====================
   var thumbs = document.querySelectorAll('.thumb');
-  var mainImg = document.querySelector('.product-img-placeholder');
+  var mainImg = document.getElementById('mainProductImg');
 
   if (thumbs.length > 0 && mainImg) {
     thumbs.forEach(function(thumb) {
       thumb.addEventListener('click', function() {
         thumbs.forEach(function(t) { t.classList.remove('active'); });
         this.classList.add('active');
-        mainImg.style.background = this.style.background;
+        var imgUrl = this.dataset.img;
+        if (imgUrl) {
+          mainImg.src = imgUrl;
+        }
       });
     });
   }
