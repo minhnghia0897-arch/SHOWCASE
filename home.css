@@ -69,6 +69,13 @@
   position: relative;
 }
 
+.hero-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .hero-card-overlay {
   position: absolute;
   bottom: 0;
