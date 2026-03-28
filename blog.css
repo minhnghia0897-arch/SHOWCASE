@@ -43,6 +43,14 @@
   aspect-ratio: 16/9;
   border-radius: 12px;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.blog-list-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .blog-list-info {
