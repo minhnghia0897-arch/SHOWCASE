@@ -93,59 +93,6 @@
   padding: 36px;
 }
 
-.featured-img::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.4) 100%);
-  border-radius: inherit;
-  pointer-events: none;
-}
-
-.featured-text,
-.featured-link {
-  position: relative;
-  z-index: 1;
-}
-
-.featured-text {
-  color: white;
-  max-width: 340px;
-}
-
-.featured-text h3 {
-  font-size: 1.7rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  margin-bottom: 8px;
-}
-
-.featured-text p {
-  font-size: 1.05rem;
-  font-weight: 400;
-  opacity: 0.85;
-  line-height: 1.5;
-}
-
-.featured-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: white;
-  font-size: 0.88rem;
-  font-weight: 400;
-  padding: 10px 20px;
-  border: 1px solid rgba(255,255,255,0.35);
-  border-radius: 980px;
-  backdrop-filter: blur(8px);
-  background: rgba(255,255,255,0.1);
-  transition: background 0.3s;
-  align-self: flex-start;
-}
-
-.featured-card:hover .featured-link {
-  background: rgba(255,255,255,0.2);
-}
 
 /* ==================== NUMBERS ==================== */
 .numbers {
