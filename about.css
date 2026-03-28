@@ -1,6 +1,6 @@
 /* ==================== ABOUT HERO ==================== */
 .about-hero {
-  padding: 80px 0 60px;
+  padding: 48px 0 32px;
   text-align: center;
   background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-white) 100%);
 }
@@ -111,7 +111,7 @@
 
 /* ==================== TEAM ==================== */
 .about-team {
-  padding: 80px 0;
+  padding: 32px 0 48px;
 }
 
 .team-grid {
