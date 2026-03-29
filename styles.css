@@ -101,8 +101,8 @@ button, input, select, textarea {
 }
 
 .navbar-nav a {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--text-secondary);
   transition: color 0.2s;
   position: relative;
