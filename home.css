@@ -1,3 +1,16 @@
+/* ==================== HERO BANNER ==================== */
+.hero-banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-banner-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  object-fit: cover;
+}
+
 /* ==================== INTRO ==================== */
 .intro {
   padding: 60px 0 32px;
