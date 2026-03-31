@@ -156,9 +156,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   background: white;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 48px;
+  border: none;
+  border-radius: 0;
+  padding: 48px 0;
 }
 
 .contact-info h2 {
