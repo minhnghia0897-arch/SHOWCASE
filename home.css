@@ -386,6 +386,10 @@
   margin-top: 0;
 }
 
+.footer .container {
+  display: block;
+}
+
 .footer-top {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
