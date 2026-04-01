@@ -619,13 +619,21 @@
 }
 
 .pricing-cta.filled {
-  background: linear-gradient(135deg, #2196F3, #00b0ff);
+  background: linear-gradient(135deg, #0080ff, #00b4ff);
   border: none;
   color: white;
+  box-shadow:
+    0 0 20px rgba(0,128,255,0.4),
+    0 4px 16px rgba(0,0,0,0.3),
+    inset 0 1px 0 rgba(255,255,255,0.25);
 }
 
 .pricing-cta.filled:hover {
-  background: linear-gradient(135deg, #1e88e5, #039be5);
+  background: linear-gradient(135deg, #006ee6, #009ee6);
+  box-shadow:
+    0 0 30px rgba(0,128,255,0.5),
+    0 6px 20px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.3);
 }
 
 /* ==================== FOOTER ==================== */
