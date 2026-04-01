@@ -404,9 +404,8 @@
   border-radius: 20px;
   padding: 36px 28px;
   min-height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
   overflow: hidden;
   transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
   backdrop-filter: blur(12px);
@@ -455,6 +454,7 @@
   letter-spacing: 2px;
   color: rgba(255,255,255,0.4);
   margin-bottom: 12px;
+  align-self: end;
 }
 
 .process-card h3 {
