@@ -399,13 +399,13 @@
 
 .process-card {
   position: relative;
-  background: linear-gradient(160deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.03) 50%, rgba(255,255,255,0.06) 100%);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: linear-gradient(160deg, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.5) 100%);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 20px;
   padding: 36px 28px;
-  min-height: 280px;
+  min-height: 300px;
   display: grid;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto auto 1fr;
   overflow: hidden;
   transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
   backdrop-filter: blur(12px);
@@ -448,13 +448,32 @@
     0 0 60px rgba(255,255,255,0.03);
 }
 
+.process-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.process-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: rgba(255,255,255,0.7);
+  fill: none;
+  stroke-width: 1.5;
+}
+
 .process-step {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: rgba(255,255,255,0.4);
   margin-bottom: 12px;
-  align-self: end;
 }
 
 .process-card h3 {
