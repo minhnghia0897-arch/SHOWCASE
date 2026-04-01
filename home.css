@@ -473,7 +473,7 @@
 /* ==================== PRICING ==================== */
 .pricing {
   padding: 60px 0;
-  background: linear-gradient(180deg, #0a0a0a 0%, #0a1628 40%, #0d2847 70%, #0a1628 100%);
+  background: linear-gradient(180deg, #000000 0%, #020b18 30%, #061a3a 55%, #0a2450 70%, #061a3a 85%, #020b18 100%);
   color: white;
 }
 
@@ -490,36 +490,41 @@
 
 .pricing-card {
   position: relative;
-  background: linear-gradient(160deg, rgba(130,180,255,0.08) 0%, rgba(20,40,80,0.6) 50%, rgba(10,20,40,0.8) 100%);
-  border: 1px solid rgba(100,160,255,0.12);
+  background: linear-gradient(160deg, rgba(80,140,240,0.06) 0%, rgba(8,18,40,0.9) 40%, rgba(4,10,24,0.95) 100%);
+  border: 1px solid rgba(60,120,220,0.15);
   border-radius: 20px;
   padding: 40px 32px;
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   box-shadow:
-    inset 0 1px 0 rgba(130,180,255,0.1),
-    0 8px 32px rgba(0,0,0,0.5);
+    inset 0 1px 0 rgba(100,160,255,0.12),
+    inset 0 -1px 0 rgba(0,0,0,0.3),
+    0 4px 24px rgba(0,0,0,0.7),
+    0 16px 48px rgba(0,0,0,0.5);
   transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .pricing-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(100,160,255,0.25);
+  border-color: rgba(80,150,255,0.3);
   box-shadow:
-    inset 0 1px 0 rgba(130,180,255,0.15),
-    0 12px 40px rgba(0,0,0,0.6),
-    0 0 40px rgba(50,120,220,0.06);
+    inset 0 1px 0 rgba(100,160,255,0.2),
+    0 8px 32px rgba(0,0,0,0.8),
+    0 20px 60px rgba(0,0,0,0.5),
+    0 0 50px rgba(40,100,200,0.08);
 }
 
 .pricing-card.popular {
-  border-color: rgba(100,180,255,0.25);
-  background: linear-gradient(160deg, rgba(130,180,255,0.14) 0%, rgba(30,60,120,0.5) 50%, rgba(10,25,50,0.8) 100%);
+  border-color: rgba(80,150,255,0.3);
+  background: linear-gradient(160deg, rgba(80,140,240,0.12) 0%, rgba(15,35,80,0.85) 40%, rgba(6,16,36,0.95) 100%);
   box-shadow:
-    inset 0 1px 0 rgba(130,180,255,0.15),
-    0 8px 32px rgba(0,0,0,0.5),
-    0 0 60px rgba(50,120,220,0.08);
+    inset 0 1px 0 rgba(100,170,255,0.2),
+    inset 0 -1px 0 rgba(0,0,0,0.3),
+    0 4px 24px rgba(0,0,0,0.7),
+    0 16px 48px rgba(0,0,0,0.5),
+    0 0 80px rgba(40,100,220,0.1);
 }
 
 .pricing-badge {
