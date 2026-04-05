@@ -376,34 +376,56 @@
 
 /* ==================== CASE STUDIES ==================== */
 .casestudy {
-  padding: 40px 0 32px;
+  padding: 0;
   overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+.casestudy .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .casestudy .section-heading {
-  margin-bottom: 24px;
+  color: white;
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 800;
+  text-align: center;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', serif;
 }
 
 .casestudy-slider {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
 }
 
 .casestudy-row {
   display: flex;
-  gap: 16px;
-  animation: scrollLeft 30s linear infinite;
+  gap: 12px;
+  animation: scrollLeft 40s linear infinite;
 }
 
 .casestudy-row-reverse {
-  animation: scrollRight 30s linear infinite;
+  animation: scrollRight 40s linear infinite;
 }
 
 .casestudy-slide {
   flex: 0 0 auto;
-  height: 280px;
-  width: calc(280px * 9 / 16);
+  height: 42vh;
+  width: calc(42vh * 9 / 16);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -422,11 +444,11 @@
 
 @keyframes scrollLeft {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-1 * (calc((100% - 64px) / 5) + 16px) * 2)); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes scrollRight {
-  0% { transform: translateX(calc(-1 * (calc((100% - 64px) / 5) + 16px) * 2)); }
+  0% { transform: translateX(-50%); }
   100% { transform: translateX(0); }
 }
 
@@ -660,11 +682,11 @@
   .cta-heading { font-size: 2.2rem; }
   .section-header { flex-direction: column; gap: 16px; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
-  .casestudy-slide { flex: 0 0 calc((100% - 32px) / 3); }
+  .casestudy-slide { height: 30vh; width: calc(30vh * 9 / 16); }
   .process-card { min-height: 200px; }
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
 }
 
 @media (max-width: 480px) {
-  .casestudy-slide { flex: 0 0 calc((100% - 16px) / 2); }
+  .casestudy-slide { height: 25vh; width: calc(25vh * 9 / 16); }
 }
