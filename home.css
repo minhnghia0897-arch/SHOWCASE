@@ -379,53 +379,28 @@
   padding: 0;
   overflow: hidden;
   background: #000;
-  position: relative;
-}
-
-.casestudy .container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.casestudy .section-heading {
-  color: white;
-  font-size: clamp(4rem, 10vw, 9rem);
-  font-weight: 800;
-  text-align: center;
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  font-family: Georgia, 'Times New Roman', serif;
 }
 
 .casestudy-slider {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding: 12px 0;
 }
 
 .casestudy-row {
   display: flex;
   gap: 12px;
-  animation: scrollLeft 40s linear infinite;
+  animation: scrollLeft 35s linear infinite;
 }
 
 .casestudy-row-reverse {
-  animation: scrollRight 40s linear infinite;
+  animation: scrollRight 35s linear infinite;
 }
 
 .casestudy-slide {
-  flex: 0 0 auto;
-  height: 42vh;
-  width: calc(42vh * 9 / 16);
+  flex: 0 0 260px;
+  height: 470px;
   border-radius: 10px;
   overflow: hidden;
 }
