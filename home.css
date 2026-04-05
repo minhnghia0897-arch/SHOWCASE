@@ -401,10 +401,10 @@
 }
 
 .casestudy-slide {
-  flex: 0 0 calc((100% - 64px) / 5);
+  flex: 0 0 calc((100% - 48px) / 4);
   border-radius: 10px;
   overflow: hidden;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 9 / 16;
 }
 
 .casestudy-slide img {
