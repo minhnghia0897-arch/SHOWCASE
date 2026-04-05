@@ -384,13 +384,13 @@
 .casestudy-slider {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 12px 0;
+  gap: 20px;
+  padding: 16px 0;
 }
 
 .casestudy-row {
   display: flex;
-  gap: 12px;
+  gap: 20px;
   animation: scrollLeft 35s linear infinite;
 }
 
@@ -401,7 +401,7 @@
 .casestudy-slide {
   flex: 0 0 260px;
   height: 470px;
-  border-radius: 10px;
+  border-radius: 18px;
   overflow: hidden;
 }
 
