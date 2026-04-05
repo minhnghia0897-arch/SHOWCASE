@@ -376,12 +376,12 @@
 
 /* ==================== CASE STUDIES ==================== */
 .casestudy {
-  padding: 60px 0 40px;
+  padding: 40px 0 32px;
   overflow: hidden;
 }
 
 .casestudy .section-heading {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .casestudy-slider {
@@ -405,6 +405,7 @@
   border-radius: 10px;
   overflow: hidden;
   aspect-ratio: 9 / 16;
+  max-height: 280px;
 }
 
 .casestudy-slide img {
